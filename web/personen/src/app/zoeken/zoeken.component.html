@@ -1,0 +1,8 @@
+<label>
+    Naam:
+    <input type="text" [formControl]="naam">
+    <button (click)="zoek()">Zoek</button>
+    <ul *ngFor="let persoon of personen">
+        <li>{{persoon.naam}} - {{persoon.geboortedatum}}</li>
+    </ul>
+</label>
